@@ -14,7 +14,11 @@ const renderNewQuote = async () => {
     const response = await fetch(quoteApiUrl);
     //store response
     let data = await response.json();
+ 
+    //access quote
+    quote = data.content;
 
+    
     
 
 }
