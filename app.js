@@ -23,6 +23,8 @@ const renderNewQuote = async () => {
         return "<span class = 'quote-chars'>" + value + "</span>"
     })
 
+    //join array for displaying
+    quoteSection.innerHTML += arr.join("");
     
     
 
