@@ -43,3 +43,15 @@ textarea{
     padding: 10px 5px;
     font-size: 16px;
 }
+
+button{
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: #93a5cf;
+    color: #e4efe9;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+}
