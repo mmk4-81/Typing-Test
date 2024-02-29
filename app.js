@@ -8,7 +8,13 @@ let time = 60;
 let timer ="";
 let mistakes = "";
 
+//display random quotes
+const renderNewQuote = async()=>{
+    //fetch
+    const response = await fetch(quoteApiUrl);
 
+    
+}
 
 
 window.onload = ()=>{
