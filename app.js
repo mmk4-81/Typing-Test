@@ -18,6 +18,11 @@ const renderNewQuote = async () => {
     //access quote
     quote = data.content;
 
+    //array of characters in the quote
+    let arr = quote.split("").map(value => {
+        return "<span class = 'quote-chars'>" + value + "</span>"
+    })
+
     
     
 
