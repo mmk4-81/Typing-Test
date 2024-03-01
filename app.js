@@ -37,3 +37,13 @@ window.onload = () => {
     userInput.disabled = true;
     renderNewQuote();
 }
+
+//start test
+const startTest = ()=>{
+    mistakes=0;
+    timer = "";
+    userInput.disabled = false;
+    document.getElementById("start-test").style.display = 'none';
+    document.getElementById("stop-test").style.display = 'block';
+
+}
