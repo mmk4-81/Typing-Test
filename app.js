@@ -46,6 +46,24 @@ userInput.addEventListener('input', () => {
 
     //array of user characters
     let userInputChars = userInput.value.split("");
+
+    //loop through each character in quote
+    quoteChars.forEach((char,input)=>{
+        if(char.innerText == userInputChars[index]){
+            char.classList.add("success");
+        }
+        else if(userInputChars[index] == nul){
+            if(char.classList.contains("success")){
+                char.classList.remove("success");
+            }
+        }
+        else{
+            if(!char.classList.contains("fail")){
+                mistakes += 1;
+                char.classList.add("fail");
+            }
+        }
+    })
 })
 
 
