@@ -14,7 +14,7 @@ const renderNewQuote = async () => {
     const response = await fetch(quoteApiUrl);
     //store response
     let data = await response.json();
- 
+
     //access quote
     quote = data.content;
 
@@ -25,7 +25,7 @@ const renderNewQuote = async () => {
 
     //join array for displaying
     quoteSection.innerHTML += arr.join("");
-    
+
 
 }
 
@@ -39,14 +39,16 @@ window.onload = () => {
 }
 
 //logic for comparing input words with quote
-userInput.addEventListener('input',()=>{
+userInput.addEventListener('input', () => {
     let quoteChars = document.querySelectorAll("quote-chars");
+    //creates an array from received span tags
+    quoteChars = Array.from(quoteChars);
 })
 
 
 //start test
-const startTest = ()=>{
-    mistakes=0;
+const startTest = () => {
+    mistakes = 0;
     timer = "";
     userInput.disabled = false;
     document.getElementById("start-test").style.display = 'none';
