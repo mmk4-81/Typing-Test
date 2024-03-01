@@ -43,6 +43,9 @@ userInput.addEventListener('input', () => {
     let quoteChars = document.querySelectorAll("quote-chars");
     //creates an array from received span tags
     quoteChars = Array.from(quoteChars);
+
+    //array of user characters
+    let userInputChars = userInput.value.split("");
 })
 
 
